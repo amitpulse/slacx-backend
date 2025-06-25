@@ -1,5 +1,5 @@
 # Project name 
-    - Slacx app for Real-Time Collaborative Workspace (Like Notion/Slack hybrid)
+    - Slacx app for Real-Time Collaborative Workspace (Smilar to Notion/Slack hybrid)
 
 # Project Description
     - Backend part for Slacx App using Node.js with Socket.io for real-time collaboration, file upload handling
@@ -14,4 +14,5 @@
 
 # Important Point
     - Maintain industry standards while writing code
+    - code should be scalable and maintainable
     - Use "import module" instead of "const module"
