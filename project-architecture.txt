@@ -1,0 +1,95 @@
+slacx-server/
+├── src/
+│   ├── app.js                      # Express app configuration
+│   ├── server.js                   # Server entry point
+│   ├── config/
+│   │   ├── database.js             # Database configuration
+│   │   ├── redis.js                # Redis configuration
+│   │   ├── socket.js               # Socket.io configuration
+│   │   ├── aws.js                  # AWS S3 configuration
+│   │   └── index.js                # Export all configs
+│   ├── controllers/
+│   │   ├── auth.controller.js      # Authentication logic
+│   │   ├── user.controller.js      # User management
+│   │   ├── workspace.controller.js # Workspace operations
+│   │   ├── document.controller.js  # Document operations
+│   │   ├── channel.controller.js   # Channel operations
+│   │   └── upload.controller.js    # File upload handling
+│   ├── middleware/
+│   │   ├── auth.middleware.js      # JWT authentication
+│   │   ├── validation.middleware.js # Request validation
+│   │   ├── rateLimit.middleware.js # Rate limiting
+│   │   ├── upload.middleware.js    # File upload middleware
+│   │   ├── error.middleware.js     # Global error handling
+│   │   └── logger.middleware.js    # Request logging
+│   ├── models/
+│   │   ├── User.model.js           # User schema
+│   │   ├── Workspace.model.js      # Workspace schema
+│   │   ├── Document.model.js       # Document schema
+│   │   ├── Channel.model.js        # Channel schema
+│   │   ├── Comment.model.js        # Comment schema
+│   │   └── index.js                # Export all models
+│   ├── routes/
+│   │   ├── auth.routes.js          # Authentication routes
+│   │   ├── user.routes.js          # User routes
+│   │   ├── workspace.routes.js     # Workspace routes
+│   │   ├── document.routes.js      # Document routes
+│   │   ├── channel.routes.js       # Channel routes
+│   │   ├── upload.routes.js        # File upload routes
+│   │   └── index.js                # Route aggregator
+│   ├── services/
+│   │   ├── auth.service.js         # Authentication business logic
+│   │   ├── user.service.js         # User business logic
+│   │   ├── workspace.service.js    # Workspace business logic
+│   │   ├── document.service.js     # Document business logic
+│   │   ├── email.service.js        # Email service
+│   │   ├── notification.service.js # Notification service
+│   │   └── file.service.js         # File handling service
+│   ├── socket/
+│   │   ├── handlers/
+│   │   │   ├── document.handler.js # Document collaboration
+│   │   │   ├── presence.handler.js # User presence
+│   │   │   ├── chat.handler.js     # Real-time chat
+│   │   │   └── notification.handler.js # Real-time notifications
+│   │   ├── middleware/
+│   │   │   ├── auth.socket.js      # Socket authentication
+│   │   │   └── rateLimit.socket.js # Socket rate limiting
+│   │   └── index.js                # Socket.io setup
+│   ├── utils/
+│   │   ├── logger.js               # Winston logger setup
+│   │   ├── response.js             # Standardized API responses
+│   │   ├── validation.js           # Validation schemas
+│   │   ├── encryption.js           # Encryption utilities
+│   │   ├── constants.js            # Application constants
+│   │   └── helpers.js              # General helper functions
+│   ├── jobs/
+│   │   ├── email.job.js            # Email queue jobs
+│   │   ├── notification.job.js     # Notification jobs
+│   │   └── cleanup.job.js          # Data cleanup jobs
+│   └── tests/
+│       ├── unit/
+│       │   ├── controllers/
+│       │   ├── services/
+│       │   └── models/
+│       ├── integration/
+│       │   ├── auth.test.js
+│       │   ├── workspace.test.js
+│       │   └── document.test.js
+│       └── fixtures/
+│           └── testData.js
+├── logs/
+│   ├── error.log
+│   ├── combined.log
+│   └── access.log
+├── uploads/
+│   └── temp/
+├── .env
+├── .env.example
+├── .gitignore
+├── .dockerignore
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+├── jest.config.js
+├── nodemon.json
+└── README.md
