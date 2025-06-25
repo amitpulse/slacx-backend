@@ -11,3 +11,7 @@
     - The database is MongoDB and file upload is done using AWS S3 bucket
     - User authenticatiion is done using JWT and OAuth2.0
     - Project should be written in clean code
+
+# Important Point
+    - Maintain industry standards while writing code
+    - Use "import module" instead of "const module"
